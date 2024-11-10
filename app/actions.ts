@@ -15,7 +15,7 @@ export async function generateOgpImage(data: {
     });
 
     if (!res.ok) {
-      throw new Error("Failed to generate OGP image");
+      throw new Error("OGP画像の生成に失敗しました。");
     }
 
     const blob = await res.blob();
